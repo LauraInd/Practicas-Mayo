@@ -8,7 +8,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css" /> <!--Estilos de CSS-->
-    <title>Buscar Producto</title>
+    <title>Search Product</title>
 </head>
 <body>
     <script type="text/javascript">
@@ -24,20 +24,20 @@
     </script>
     <div class="container">
         <div class="product-tittle">
-            <h1>Buscar productos</h1>
+            <h1>Search Product</h1>
         </div>
         <div class="alert alert-secondary" role="alert">
-            Puedes buscar um producto por nombre, precio, cantidad de stock o por el id de su proveedor.
+            You can search for a product by name, price, stock quantity, or by its supplier id.
         </div>
         <form>
             <div class="mb-2">
-                <label for="searchtext" class="form-label">Texto</label>
+                <label for="searchtext" class="form-label">Text</label>
                 <input name="searchtext" type="text" class="form-control w-25" id="searchtext">
             </div>
-            <button type="submit" class="btn btn-success">Buscar</button>
+            <button type="submit" class="btn btn-success">Search</button>
         </form>
         <div id="result"></div>
-        <a href="index.jsp" class="btn btn-primary">Menú Principal</a>
+        <a href="index.jsp" class="btn btn-primary">Main menu</a>
     </div>
 </body>
 </html>

@@ -15,15 +15,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" /> <!--Estilos de CSS-->
-    <title>Listado de proveedores</title>
+    <title>Show suppliers</title>
 </head>
 <body>
     <div class="container">
         <div class="supplier-tittle">
-            <h1>Listado de proveedores</h1>
+            <h1>Show suppliers</h1>
         </div>
         <div class="alert alert-secondary" role="alert">
-            Selecciona el proveedor que quieres consultar.
+            Select the supplier you want to see.
         </div>
             <ul class="list-group">
                 <%
@@ -43,7 +43,7 @@
 
                 %>
                 <div class="alert alert-danger" role="alert">
-                    <h6>Error de conexión con la base da datos.</h6>
+                    <h6>Database connection failed.</h6>
                 </div>
                 <%
                         sqle.printStackTrace();
@@ -51,7 +51,7 @@
                 %>
             </ul>
         <div class="button">
-        <a href="index.jsp" class="btn btn-primary">Menú Principal</a>
+        <a href="index.jsp" class="btn btn-primary">Main menu</a>
         </div>
     </div>
 </body>

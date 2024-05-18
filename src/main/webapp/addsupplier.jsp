@@ -14,7 +14,7 @@
     String supplierId = request.getParameter("id");
     Supplier supplier = null;
     if (supplierId != null) {
-        textBouton = "Modificar";
+        textBouton = "Modify";
         Database database = new Database();
         SupplierDao supplierDao = new SupplierDao(database.getConnection());
         try {
@@ -24,7 +24,7 @@
             sqle.printStackTrace();
         }
     } else {
-        textBouton = "Registrar";
+        textBouton = "Register";
     }
 
 %>
@@ -36,7 +36,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- libreria de ajax es como una libreria de js con cosas ya hechas -->
     <link rel="stylesheet" href="css/style.css" /> <!--Estilos de CSS-->
-    <title>Añadir proveedor</title>
+    <title>Add supplier</title>
 </head>
 <body>
     <script type="text/javascript">
@@ -53,15 +53,15 @@
 
     <div class="container">
         <div class="supplier-tittle">
-            <h1>Añadir Proveedor</h1>
+            <h1>Add supplier</h1>
         </div>
 
         <div class="alert alert-secondary" role="alert">
-            Todos los campos son obligatórios. Si el proveedor ya existe lo puedes modificar.
+            All fields are mandatory. If the provider already exists, you can modify it.
         </div>
         <form>
             <div class="mb-2">
-                <label for="nombre" class="form-label" style="font-size: 1.5rem">Nombre</label>
+                <label for="nombre" class="form-label" style="font-size: 1.5rem">Name</label>
                 <input name="nombre" type="text" class="form-control w-25" id="nombre" value="<% if (supplier != null) out.print(supplier.getName()); %>" required>
                 <!-- input name es lo importante para poder coger las variables con java -->
             </div>
@@ -70,11 +70,11 @@
                 <input name="cif" type="text" class="form-control w-25" id="cif" value="<% if (supplier != null) out.print(supplier.getCif()); %>" required>
             </div>
             <div class="mb-2">
-                <label for="telefono" class="form-label" style="font-size: 1.5rem">Telefono</label>
+                <label for="telefono" class="form-label" style="font-size: 1.5rem">Telephone</label>
                 <input name="telefono" type="text" class="form-control w-25" id="telefono" value="<% if (supplier != null) out.print(supplier.getPhone()); %>" required>
             </div>
             <div class="mb-2">
-                <label for="email" class="form-label" style="font-size: 1.5rem">Correo Electrónico</label>
+                <label for="email" class="form-label" style="font-size: 1.5rem">Mail</label>
                 <input type="email" name="email" type="text" class="form-control is-invalid w-25" id="email" placeholder="name@example.com" value="<% if (supplier != null) out.print(supplier.getEmail()); %>" required>
             </div>
 
@@ -83,7 +83,7 @@
             <button type="submit" class="btn btn-success" style="font-size: 1.5rem"><%= textBouton %></button>
         </form>
         <div id="result"></div>
-        <a href="index.jsp" class="btn btn-primary">Menú Principal</a>
+        <a href="index.jsp" class="btn btn-primary">Main Menu</a>
 
     </div>
 </body>

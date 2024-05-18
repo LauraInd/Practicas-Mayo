@@ -8,7 +8,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css" /> <!--Estilos de CSS-->
-    <title>Buscar Proveedor</title>
+    <title>Search Supplies</title>
 </head>
 <body>
     <script type="text/javascript">
@@ -24,20 +24,20 @@
     </script>
     <div class="container">
         <div class="supplier-tittle">
-            <h1>Buscar proveedores de productos</h1>
+            <h1>Search products supplies</h1>
         </div>
         <div class="alert alert-secondary" role="alert">
-            Puedes buscar um proveedor por nombre, CIF, telefono o e-mail.
+            You can search for a provider by name, VAT number, phone number, or email.
         </div>
         <form>
             <div class="mb-2">
-                <label for="searchtext" class="form-label" style="font-size: 1.5rem">Texto</label>
+                <label for="searchtext" class="form-label" style="font-size: 1.5rem">Text</label>
                 <input name="searchtext" type="text" class="form-control w-25" id="searchtext">
             </div>
-            <button type="submit" class="btn btn-success" style="font-size: 1.5rem">Buscar</button>
+            <button type="submit" class="btn btn-success" style="font-size: 1.5rem">Search</button>
         </form>
         <div id="result"></div>
-        <a href="index.jsp" class="btn btn-primary">Menú Principal</a>
+        <a href="index.jsp" class="btn btn-primary">Main menu</a>
     </div>
 </body>
 </html>

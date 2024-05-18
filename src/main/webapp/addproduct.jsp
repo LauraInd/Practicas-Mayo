@@ -19,7 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- libreria de ajax es como una libreria de js con cosas ya hechas -->
     <link rel="stylesheet" href="css/style.css" /> <!--Estilos de CSS-->
-    <title>Añadir producto</title>
+    <title>Add product</title>
 </head>
 <body>
     <script type="text/javascript">
@@ -36,20 +36,20 @@
 
     <div class="container">
         <div class="product-tittle">
-            <h1>Añadir producto</h1>
+            <h1>Add product</h1>
         </div>
         <div class="alert alert-secondary" role="alert">
-            Todos los campos son obligatórios.
+            All fields are mandatory
         </div>
 
         <form>
             <div class="mb-2">
-                <label for="nombre" class="form-label" style="font-size: 1.5rem">Nombre del producto</label>
+                <label for="nombre" class="form-label" style="font-size: 1.5rem">Name of the product</label>
                 <input name="nombre" type="text" class="form-control w-25" id="nombre" required>
                 <!-- input name es lo importante para poder coger las variables con java -->
             </div>
             <div class="mb-3">
-                <label for="precio" class="form-label" style="font-size: 1.5rem">Precio</label>
+                <label for="precio" class="form-label" style="font-size: 1.5rem">Price</label>
                 <input name="precio" type="text" class="form-control w-25" id="precio" required>
             </div>
             <div class="mb-2">
@@ -61,9 +61,9 @@
                 Connection connection = database.getConnection();
             %>
             <div class="form-label">
-                <label for="idProveedor" style="font-size: 1.5rem">Proveedor</label>
+                <label for="idProveedor" style="font-size: 1.5rem">Supplier</label>
                 <select class="form-control w-25" id="idProveedor" name="idProveedor" required>
-                    <option>Selecciona un Proveedor</option>
+                    <option>Select supplier</option>
                     <%
                         SupplierDao supplierDao = new SupplierDao(database.getConnection());
                         ArrayList<Supplier> suppliers = supplierDao.findAll();
@@ -73,10 +73,10 @@
                     %>
                 </select>
             </div>
-            <button type="submit" class="btn btn-success" style="font-size: 1.5rem">Registrar</button>
+            <button type="submit" class="btn btn-success" style="font-size: 1.5rem">Register</button>
         </form>
         <div id="result"></div>
-        <a href="index.jsp" class="btn btn-primary">Menú Principal</a>
+        <a href="index.jsp" class="btn btn-primary">Main menu</a>
     </div>
 
 </body>

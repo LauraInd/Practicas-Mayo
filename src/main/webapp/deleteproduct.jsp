@@ -20,7 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- libreria de ajax es como una libreria de js con cosas ya hechas -->
     <link rel="stylesheet" href="css/style.css" /> <!--Estilos de CSS-->
-    <title>Eliminar Producto</title>
+    <title>Delete product</title>
 </head>
 <body>
     <script type="text/javascript">
@@ -44,11 +44,11 @@
              product = optionalSupplier.get();
     %>
     <div class="container">
-        <h2>Eliminar Producto</h2>
+        <h2>Delete product</h2>
         <div class="card text-center">
-            <div class="card-header">¿Estás seguro que quieres eliminar el producto?</div>
+            <div class="card-header">Are you sure you want to delete the product?</div>
             <div class="card-body">
-                <a href="delete-product?idProduct=<%= product.getIdProduct() %>" class="btn btn-danger">Si</a>
+                <a href="delete-product?idProduct=<%= product.getIdProduct() %>" class="btn btn-danger">Yes</a>
                 <a href="showproducts.jsp?idProduct<%= product.getIdProduct() %>" class="btn btn-outline-danger">No</a>
             </div>
         </div>
@@ -58,7 +58,7 @@
     <%
     } catch (SQLException sqle) {
     %>
-    <div class='alert alert-danger' role='alert'>No se ha podido conectar con la base de datos. Verifique que todos los datos son correctos.</div>
+    <div class='alert alert-danger' role='alert'>Unable to connect to the database. Verify that all data is correct</div>
     <%
         }
     %>
