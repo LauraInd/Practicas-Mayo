@@ -17,7 +17,7 @@
     <div class="container">
         <h2 id="titulo" class="titulo">MAY PRACTICE</h2>
         <div class="welcome">
-                <h2>Here you will be able to manage the company suppliers and products..</h2>
+                <h2>Here you will be able to manage the company suppliers and products.</h2>
         </div>
         <div class="list">
         <div class="supllier">
@@ -35,7 +35,7 @@
             <h1>PRODUCT</h1>
         </div>
         <a href="/practicas/showproducts.jsp" class="btn btn-outline-success"><h2>Show products</h2></a>
-        <a href="/practicas/searchproduct.jsp" class="btn btn-outline-success"><h2>sSearch products</h2></a>
+        <a href="/practicas/searchproduct.jsp" class="btn btn-outline-success"><h2>Search products</h2></a>
         <a href="/practicas/addproduct.jsp" class="btn btn-outline-success"><h2>Add products</h2></a>
     </div>
         </div>

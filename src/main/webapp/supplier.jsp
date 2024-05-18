@@ -33,8 +33,8 @@
             <div class="card-header-supplier">Information supplier</div>
             <div class="card-body">
                 <h5 class="card-title"><%= supplier.getName()%></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Telefono: <%= supplier.getPhone() %></h6>
-                <h6 class="card-subtitle mb-2 text-muted">CIF: <%= supplier.getCif() %></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Telephone: <%= supplier.getPhone() %></h6>
+                <h6 class="card-subtitle mb-2 text-muted">NIF: <%= supplier.getCif() %></h6>
                 <a href="addsupplier.jsp?id=<%= supplier.getId() %>" class="btn btn-outline-warning">Modify</a>
                 <a href="deletesupplier.jsp?id=<%= supplier.getId() %>" class="btn btn-outline-danger">Delete</a>
             </div>

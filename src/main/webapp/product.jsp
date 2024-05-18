@@ -31,8 +31,8 @@
             <div class="card-header-product">Product information</div>
             <div class="card-body">
                 <h5 class="card-title"><%= product.getName() %></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Precio: <%= product.getPrice() + " €" %></h6>
-                <h6 class="card-subtitle mb-2 text-muted">Stock: <%= product.getStock() + " unidades" %></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Price: <%= product.getPrice() + " €" %></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Stock: <%= product.getStock() + " units" %></h6>
                 <a href="deleteproduct.jsp?idProduct=<%= product.getIdProduct() %>" class="btn btn-outline-danger">Delete</a>
             </div>
             <a href="showproducts.jsp" class="btn btn-primary">Return</a>

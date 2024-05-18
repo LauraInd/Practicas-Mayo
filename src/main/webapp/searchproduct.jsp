@@ -31,10 +31,10 @@
         </div>
         <form>
             <div class="mb-2">
-                <label for="searchtext" class="form-label">Text</label>
+                <label for="searchtext" class="form-label" style="font-size: 1.5rem">Text</label>
                 <input name="searchtext" type="text" class="form-control w-25" id="searchtext">
             </div>
-            <button type="submit" class="btn btn-success">Search</button>
+            <button type="submit" class="btn btn-success" style="font-size: 1.5rem">Search</button>
         </form>
         <div id="result"></div>
         <a href="index.jsp" class="btn btn-primary">Main menu</a>
