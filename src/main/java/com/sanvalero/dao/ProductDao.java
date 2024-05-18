@@ -58,7 +58,7 @@ public class ProductDao {
 
     //Metodo para buscar y listar producto en función del texto que indique el usuario. Se buscará el todas las columnas.
     public ArrayList<Product> findAllProduct(String searchText) throws SQLException {
-        String sql = "SELECT * FROM PRODUCTOS INSTR(NOMBRE, ?) != 0 OR INSTR(PRECIO, ?) != 0 OR INSTR(STOCK, ?) != 0 OR INSTR(ID_PROVEEDOR, ?) != 0 ORDER BY nombre";
+        String sql = "SELECT * FROM PRODUCTOS WHERE INSTR(NOMBRE, ?) != 0 OR INSTR(PRECIO, ?) != 0 OR INSTR(STOCK, ?) != 0 OR INSTR(ID_PROVEEDOR, ?) != 0 ORDER BY nombre";
         ArrayList<Product> products = new ArrayList<>();
 
         PreparedStatement statement = connection.prepareStatement(sql);
@@ -78,7 +78,7 @@ public class ProductDao {
 
     //Método para buscar por Nombre
     public Optional<Product> findByName(String name) throws SQLException {
-        String sql = "SLECT * FROM PRODUCTOS WHERE NOMBRE = ?";
+        String sql = "SELECT * FROM PRODUCTOS WHERE NOMBRE = ?";
         Product product = null;
 
         PreparedStatement statement = connection.prepareStatement(sql);
